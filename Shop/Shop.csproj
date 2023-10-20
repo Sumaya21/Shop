@@ -156,7 +156,6 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\CartDto.cs" />
-    <Compile Include="Models\Class1.cs" />
     <Compile Include="Models\CustomersDto.cs" />
     <Compile Include="Models\LoginDto.cs" />
     <Compile Include="Oder.cs">

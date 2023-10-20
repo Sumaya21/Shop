@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="61d0a54e423244a2b71e8fe81c0e9045" Name="Diagram1">
+        <EntityTypeShape EntityType="ProductSystemModel.Category" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProductSystemModel.Customer" Width="1.5" PointX="5" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProductSystemModel.Product" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProductSystemModel.ProductsCategory" Width="1.5" PointX="3" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProductSystemModel.ProductsCustomer" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProductSystemModel.sysdiagram" Width="1.5" PointX="5.75" PointY="2.125" IsExpanded="true" />
+        <AssociationConnector Association="ProductSystemModel.FK_ProductsCategorys_Categorys" ManuallyRouted="false" />
+        <AssociationConnector Association="ProductSystemModel.FK_ProductsCustomers_Customers" ManuallyRouted="false" />
+        <AssociationConnector Association="ProductSystemModel.FK_ProductsCategorys_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="ProductSystemModel.FK_ProductsCustomers_Products" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="ProductSystemModel.Oder" Width="1.5" PointX="7.875" PointY="7.125" />
+        <EntityTypeShape EntityType="ProductSystemModel.OdersDetail" Width="1.5" PointX="8" PointY="3.875" />
+        <AssociationConnector Association="ProductSystemModel.FK_Oders_Customers" />
+        <AssociationConnector Association="ProductSystemModel.FK_OdersDetails_Oders" />
+        <AssociationConnector Association="ProductSystemModel.FK_OdersDetails_Products" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

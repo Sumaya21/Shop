@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewBag.Title = "Cart";
+}
+
+<h2>Cart</h2>
+@{
+    if (TempData["msg"] != null)
+    {
+        <span class="text-info">@TempData["msg"]</span>
+        <br />
+    }
+}
+
+<table class="table table-bordered">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Price</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Name</td>
+            <td>@item.Price</td>
+            <td>
+                <a href="DeleteCart/@item.Id"
+                   class="btn btn-danger">
+                    Delete From Cart
+                </a>
+            </td>
+        </tr>
+    }
+
+    <tr>
+        <td></td>
+        <td> Total</td>
+        <td> @ViewBag.TotalPrice</td>
+        <td>
+            <a href="Order" class="btn btn-success">Confirm Order</a>
+        </td>
+    </tr>
+</table>
+
+
+

@@ -1,0 +1,58 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+@{
+    if (TempData["msg"] != null)
+    {
+        <span class="alart">@TempData["msg"]</span>
+        <br />
+
+    }
+
+}
+     <a href="Customer/Cart" class="btn btn-info">View Cart</a>
+      <br />
+     <a href="Customer/OrderDetails" class="btn btn-info">View Order Details</a>
+
+<table class="table table-bordered">
+    <tr>
+
+        <th>Id</th>
+        <th>Name</th>
+        <th>Price</th>
+
+    </tr>
+
+    @foreach (var itme in Model)
+    {
+        <tr>
+            <td>@itme.Id</td>
+            <td>@itme.Name</td>
+            <td>@itme.Price</td>
+            <td>
+                <a href="Customer/AddToCart/@itme.Id"
+                   class="btn btn-success">
+                    Add to cart
+                </a>
+            </td>
+
+        </tr>
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+</table>
